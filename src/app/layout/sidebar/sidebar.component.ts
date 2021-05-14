@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { SidebarItem } from '../../models/layout';
 
 @Component({
   selector: 'gm-sidebar',
@@ -8,11 +9,13 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class SidebarComponent implements OnInit {
 
   @Input() collapsed = false;
+  @Input() sideList: SidebarItem[];
   @Output() sidebarClosed = new EventEmitter();
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }

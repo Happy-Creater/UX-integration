@@ -12,3 +12,8 @@ nav {
 .menu-bar {
   top: 8px;
 }
+
+.sidebar-list {
+  overflow-y: auto;
+  height: calc(100% - 65px);
+}

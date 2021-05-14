@@ -1,4 +1,5 @@
 @import "../../../assets/theme";
+$border-radius: 10px;
 
 .users-table-wrapper {
   border-radius: 16px;
@@ -7,11 +8,12 @@
 
 .search-box {
   border-radius: 15px;
-  width: 200px;
-  border: 1px solid grey;
+  width: 100%;
+  border: 1px solid #C2C2C2;
   height: 30px;
-  padding-left: 30px;
-  padding-right: 10px;
+  padding: 10px 10px 10px 40px;
+  font-family: Spartan;
+  font-size: 12px;
 }
 
 .search-box:focus {
@@ -19,25 +21,129 @@
 }
 
 .search-icon {
-  left: 10px;
+  left: 20px;
   top: 5px;
   color: #C2C2C2;
+  font-size: 11px;
 }
 
 .fake-container {
   flex: 1 1 1px;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 26px;
 }
 
 ::placeholder {
   color: #C2C2C2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Spartan;
+  font-size: 10px;
 }
 
 .breadcrumb {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 33.45px;
-  font-family: Spartan;
   font-size: 11px;
   line-height: 13px;
   background: none;
+  font: normal normal bold 11px/13px Spartan
+}
+
+.breadcrumb-symbol {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.user-table {
+  margin-top: 30px;
+}
+
+.bordered {
+  border: 1px solid #F2F2F2;
+  border-radius: $border-radius $border-radius 0px 0px;
+  -moz-border-radius: $border-radius $border-radius 0px 0px;
+  -webkit-border-radius: $border-radius $border-radius 0px 0px;
+  border-spacing: 0;
+  margin-top: 30px;
+  border-collapse: separate;
+}
+.bordered th:first-child {
+  border-radius: $border-radius 0 0 0;
+  -moz-border-radius: $border-radius 0 0 0;
+  -webkit-border-radius: $border-radius 0 0 0;
+}
+
+.bordered th:last-child {
+  border-radius: 0 $border-radius 0 0;
+  -moz-border-radius: 0 $border-radius 0 0;
+  -webkit-border-radius: 0 $border-radius 0 0;
+}
+
+.user-id {
+  width: 9%;
+  float: left;
+}
+
+.user-name {
+  width: 12%;
+  float: left;
+}
+
+.user-company {
+  width: 16%;
+  float: left;
+}
+
+.user-email {
+  width: 18%;
+  float: left;
+}
+
+.user-type {
+  width: 8%;
+  float: left;
+}
+
+.user-state {
+  width: 10%;
+  float: left;
+}
+
+.user-phone {
+  width: 10%;
+  float: left;
+}
+
+.user-status {
+  width: 7%;
+  float: left;
+}
+
+.user-date {
+  width: 8%;
+  float: left;
+}
+
+.user-action {
+  width: 2%;
+  float: left;
+}
+
+.user-item {
+  overflow: auto;
+}
+
+.user-item.odd {
+  background-color: #00BA7030;
+}
+
+.user-item.even {
+  background-color: $white;
+}
+
+.search-div {
+  width: 30%;
 }

@@ -1,4 +1,10 @@
 @mixin colors($property) {
+  &-white {
+    #{$property}: $white;
+  }
+  &-concrete {
+    #{$property}: $concrete;
+  }
   &-cod-gray {
     #{$property}: $cod-gray;
   }
@@ -82,6 +88,12 @@
   }
   &-pattens-blue-2 {
     #{$property}: $pattens-blue-2;
+  }
+  &-dusty-gray {
+    #{$property}: $dusty-gray
+  }
+  &-jade {
+    #{$property}: $jade
   }
 }
 

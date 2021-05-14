@@ -1,18 +1,47 @@
 <div class="d-flex flex-column h-100">
   <div class="breadcrumb">
-      <span >User Management</span> <span>&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;</span> <span>All Users</span>
+      <span >User Management</span> <span class="breadcrumb-symbol">&gt;</span> <span>All Users</span>
   </div>
 
-  <div class="users-table-wrapper py-25 px-35 flex-grow-1 d-flex flex-column">
-    <div class="d-flex justify-content-between align-items-center">
-      <span>All Users</span>
-      <div class="position-relative">
+  <div class="users-table-wrapper py-25 px-35 flex-grow-1 d-flex flex-column  bg-color-white">
+    <div class="d-flex justify-content-between align-items-center w-100">
+      <span class="font-19 font-weight-medium">All Users</span>
+      <div class="position-relative search-div">
         <input type="text" class="search-box" placeholder="Search Items">
-        <span class="position-absolute search-icon"><i class="fa fa-search"></i></span>
+        <span class="position-absolute search-icon"><img src="assets/icons/search-icon.svg"/></span>
       </div>
     </div>
-    <div class="mt-20 pretty-scroll flex-grow-1 fake-container">
-      <div *ngFor="let item of fakeData; let i = index">{{ item }}</div>
+    <table class="mt-30 bordered w-100">
+      <thead class="font-8 bg-color-concrete color-dusty-gray">
+      <tr>
+        <th class="pt-10 pb-10 width-pro-9 pl-10">ID # <i class="fas fa-arrow-down color-jade"></i></th>
+        <th class="pt-10 pb-10 width-pro-11">Name  <i class="fas fa-arrow-up color-jade"></i></th>
+        <th class="pt-10 pb-10 width-pro-16">Company  <i class="fas fa-arrow-up color-jade"></i></th>
+        <th class="pt-10 pb-10 width-pro-18">Email  <i class="fas fa-arrow-up color-jade"></i></th>
+        <th class="pt-10 pb-10 width-pro-8">UserType  <i class="fas fa-arrow-up color-jade"></i></th>
+        <th class="pt-10 pb-10 width-pro-10">State/Provice  <i class="fas fa-arrow-up color-jade"></i></th>
+        <th class="pt-10 pb-10 width-pro-10">Phone Number  <i class="fas fa-arrow-up color-jade"></i></th>
+        <th class="pt-10 pb-10 width-pro-7">Status  <i class="fas fa-arrow-up color-jade"></i></th>
+        <th class="pt-10 pb-10 width-pro-8">Date Created  <i class="fas fa-arrow-up color-jade"></i></th>
+        <th class="pr-10 width-pro-4"></th>
+      </tr>
+      </thead>
+    </table>
+    <div class="pretty-scroll flex-grow-1 fake-container w-100">
+      <div *ngFor="let item of fakeData; let i = index" class="user-item {{i % 2 == 0? 'odd' : 'even'}}">
+        <div class="user-id pl-10">{{i}}</div>
+        <div class="user-name">John Smith</div>
+        <div class="user-company">McCarey's Landscaping, Inc.</div>
+        <div class="user-email">Johnsmith@mccareys.com</div>
+        <div class="user-type">Buyer</div>
+        <div class="user-state">New York, USA</div>
+        <div class="user-phone">555-555-5555</div>
+        <div class="user-status">Active</div>
+        <div class="user-date">02/03/2019</div>
+        <div class="user-action">...</div>
+        <div class="clear-left"></div>
+      </div>
     </div>
+
   </div>
 </div>
