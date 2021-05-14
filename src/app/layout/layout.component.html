@@ -1,8 +1,15 @@
-<div>
-  <gm-sidebar></gm-sidebar>
-  <div>
-    <gm-header></gm-header>
-    <router-outlet></router-outlet>
+<div class="main-layout d-flex flex-column h-100">
+  <div class="d-flex flex-grow-1">
+    <gm-sidebar [collapsed]="sidebarCollapsed" (sidebarClosed)="sidebarCollapsed = true"></gm-sidebar>
+    <div class="d-flex flex-grow-1 flex-column">
+      <gm-header [collapsed]="sidebarCollapsed" (sidebarOpened)="sidebarCollapsed = false" class="w-100"></gm-header>
+      <div class="content py-20 h-100">
+        <div class="container h-100">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <gm-footer></gm-footer>
 </div>
-<gm-footer></gm-footer>

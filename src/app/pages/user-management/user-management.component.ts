@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserManagementComponent implements OnInit {
 
+  fakeData: string[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
+    for (let i = 0; i < 300; i++) {
+      this.fakeData.push('Hello World!');
+    }
   }
 
 }

@@ -1,0 +1,116 @@
+// Colors
+$jade: #00BA70;
+$niagara: #07A39D; // primary color
+$jewel: #106D2F; // success color
+$blue-lagoon: #02727C;
+$blue-romance: #D1F4D9;
+$atoll: #0C6C7E; // info color
+$humming-bird: #D0F3F8;
+$tangerine: #F18F01; // warning color
+$peach: #FFE4BC;
+$tonys-pink: #E4A37C;
+$merlot: #841E30; // danger color
+$cosmos: #FED6DB;
+$japonica: #D97070;
+$pickled-bluewood: #354A5E;
+$cod-gray: #151515;
+$mine-shaft: #282828;
+$tundora: #414141;
+$dove-gray: #707070;
+$regent-gray: #86929E;
+$mercury: #E1E1E1;
+$black-squeeze: #E6F6F5;
+$catskill-white: #FFFFFF;
+$athens-gray: #F7F8FA;
+$silver: #C1C1C1;
+$pure-silver: #C0C0C0;
+$aqua-island: #9CDAD8;
+$valencia: #DA3E51;
+$porcelain: #EBEDEF;
+$golden-sand: #F1D06D;
+$trout: #495057;
+$pattens-blue: #DFF4FF;
+$pattens-blue-2: #F3F7FB;
+$fountain-blue: #5897BF;
+$old-lace: #FEF9F2;
+
+// Theme colors
+$theme-colors: (
+  primary: $jade,
+  success: $jewel,
+  info: $atoll,
+  warning: $tangerine,
+  danger: $merlot
+);
+
+// Spacing
+$pixel-spacer: 5px !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+@for $i from 1 through 50 {
+  $spacers: map-merge($spacers, (
+    $i * 5: ($i * $pixel-spacer)
+  ));
+}
+
+// Buttons
+$btn-font-weight: $font-weight-bold;
+$btn-font-size: 13px;
+$btn-padding-y: 0.75rem;
+$btn-padding-x: 1.5rem;
+
+// Typography
+$font-size-base: 0.875rem;
+$h1-font-size: 2.75rem;
+$h2-font-size: 1.875rem;
+$h5-font-size: 1.375rem;
+$h6-font-size: 1rem;
+
+// Navs
+$nav-tabs-border-width: 2px;
+$nav-tabs-border-radius: 0;
+$nav-tabs-border-color: white;
+$nav-tabs-link-hover-border-color: white white $niagara;
+$nav-tabs-link-active-color: $niagara;
+$nav-tabs-link-active-border-color: white white $niagara;
+
+// Cards
+$card-border-radius: 3px;
+$card-border-width: 0;
+
+// Forms
+$form-group-margin-bottom: 1.25rem;
+$input-padding-x: 1.25rem;
+$input-padding-y: 0.875rem;
+$input-line-height: 1.375rem;
+$input-font-size: 0.875rem;
+$input-border-width: 0;
+$input-height: 50px;
+$input-bg: $catskill-white;
+$input-placeholder-color: $silver;
+
+// Dropdowns
+$dropdown-min-width: 14.38rem;
+$dropdown-padding-y: 0;
+$dropdown-font-size: 12px;
+$dropdown-border-width: 0;
+$dropdown-link-color: $mine-shaft;
+$dropdown-link-active-color: $mine-shaft;
+$dropdown-link-active-bg: $black-squeeze;
+$dropdown-divider-margin-y: 0;
+$dropdown-item-padding-x: 0.9375rem;
+
+// Alert
+$alert-color-level: 0;
+$alert-bg-level: -10;
+$alert-border-width: 0;
+
+// Breakpoint
+$grid-breakpoints: (
+  xs: 0,
+  xsm: 375px,
+  sm: 567px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+);

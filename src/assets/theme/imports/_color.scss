@@ -1,0 +1,110 @@
+@mixin colors($property) {
+  &-cod-gray {
+    #{$property}: $cod-gray;
+  }
+  &-blue-lagoon {
+    #{$property}: $blue-lagoon;
+  }
+  &-mine-shaft {
+    #{$property}: $mine-shaft;
+  }
+  &-dove-gray {
+    #{$property}: $dove-gray;
+  }
+  &-catskill-white {
+    #{$property}: $catskill-white;
+  }
+  &-aqua-island {
+    #{$property}: $aqua-island;
+  }
+  &-athens-gray {
+    #{$property}: $athens-gray;
+  }
+  &-tundora {
+    #{$property}: $tundora;
+  }
+  &-regent-gray {
+    #{$property}: $regent-gray;
+  }
+  &-japonica {
+    #{$property}: $japonica;
+  }
+  &-blue-romance {
+    #{$property}: $blue-romance;
+  }
+  &-humming-bird {
+    #{$property}: $humming-bird;
+  }
+  &-peach {
+    #{$property}: $peach;
+  }
+  &-tonys-pink {
+    #{$property}: $tonys-pink;
+  }
+  &-cosmos {
+    #{$property}: $cosmos;
+  }
+  &-silver {
+    #{$property}: $silver;
+  }
+  &-pure-silver {
+    #{$property}: $pure-silver;
+  }
+  &-mercury {
+    #{$property}: $mercury;
+  }
+  &-black-squeeze {
+    #{$property}: $black-squeeze;
+  }
+  &-black {
+    #{$property}: $black;
+  }
+  &-valencia {
+    #{$property}: $valencia;
+  }
+  &-porcelain {
+    #{$property}: $porcelain;
+  }
+  &-golden-sand {
+    #{$property}: $golden-sand;
+  }
+  &-trout {
+    #{$property}: $trout;
+  }
+  &-fountain-blue {
+    #{$property}: $fountain-blue;
+  }
+  &-old-lace {
+    #{$property}: $old-lace;
+  }
+  &-pattens-blue {
+    #{$property}: $pattens-blue;
+  }
+  &-pattens-blue-2 {
+    #{$property}: $pattens-blue-2;
+  }
+}
+
+.color {
+  @include colors(color);
+}
+
+.bg-color {
+  @include colors(background-color);
+}
+
+.border-color {
+  @include colors(border-color);
+}
+
+.bg-primary {
+  &-transparent {
+    background-color: #07A39D20; // $niagara
+  }
+}
+
+.bg-gradient {
+  &-tangerine {
+    background: linear-gradient(45deg, #F18F01 0%, #F9B256 100%);
+  }
+}

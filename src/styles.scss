@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@import "assets/theme";
+@import "~bootstrap";
+
+@import "assets/theme/imports";
+
+@font-face {
+  font-family: Spartan;
+  src: local("Spartan"), url(./assets/fonts/Spartan/Spartan-VariableFont_wght.ttf) format("truetype");
+}

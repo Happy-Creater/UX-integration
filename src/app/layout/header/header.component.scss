@@ -1,0 +1,14 @@
+$header-height: 65px;
+
+nav {
+  height: $header-height;
+  box-shadow: 0px 3px 15px #00000017;
+}
+
+.header-container {
+  height: $header-height;
+}
+
+.menu-bar {
+  top: 8px;
+}

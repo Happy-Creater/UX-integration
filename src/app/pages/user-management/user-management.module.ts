@@ -12,6 +12,7 @@ import { UserManagementComponent } from './user-management.component';
   imports: [
     CommonModule,
     UserManagementRoutingModule
-  ]
+  ],
+  exports: [UserManagementComponent]
 })
 export class UserManagementModule { }
