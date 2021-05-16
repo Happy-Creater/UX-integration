@@ -56,3 +56,30 @@
 .pretty-scroll {
   @include pretty-scroll;
 }
+
+@for $i from 1 through 100 {
+  .width-pro-#{$i} {
+    width: percentage($i / 100);
+  }
+}
+
+@for $i from 1 through 100 {
+  .width-percent-#{$i} {
+    @include flex(width, percentage($i / 100));
+  }
+}
+
+@for $i from 1 through 50 {
+  .btl-radius-#{$i} {
+    border-top-left-radius: #{$i}px;
+  }
+  .btr-radius-#{$i} {
+    border-top-right-radius: #{$i}px;
+  }
+  .bbl-radius-#{$i} {
+    border-bottom-left-radius: #{$i}px;
+  }
+  .bbr-radius-#{$i} {
+    border-bottom-right-radius: #{$i}px;
+  }
+}

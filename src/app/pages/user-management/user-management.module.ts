@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { UserManagementRoutingModule } from './user-management-routing.module';
 import { UserManagementComponent } from './user-management.component';
+import { PipesModule } from '../../pipes/pipes.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { UserManagementComponent } from './user-management.component';
   ],
   imports: [
     CommonModule,
-    UserManagementRoutingModule
+    UserManagementRoutingModule,
+    PipesModule,
   ],
   exports: [UserManagementComponent]
 })

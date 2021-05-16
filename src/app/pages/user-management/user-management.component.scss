@@ -132,16 +132,20 @@ $border-radius: 10px;
   float: left;
 }
 
-.user-item {
-  overflow: auto;
+.odd {
+  background-color: #00BA7011;
 }
 
-.user-item.odd {
+.odd:hover {
   background-color: #00BA7030;
 }
 
-.user-item.even {
+.even {
   background-color: $white;
+}
+
+.even:hover {
+  background-color: #00BA7030;
 }
 
 .search-div {

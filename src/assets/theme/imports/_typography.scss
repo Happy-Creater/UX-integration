@@ -4,27 +4,6 @@
   }
 }
 
-@for $i from 1 through 100 {
-  .width-pro-#{$i} {
-    width: percentage($i / 100);
-  }
-}
-
-@for $i from 1 through 50 {
-  .btl-radius-#{$i} {
-    border-top-left-radius: #{$i}px;
-  }
-  .btr-radius-#{$i} {
-    border-top-right-radius: #{$i}px;
-  }
-  .bbl-radius-#{$i} {
-    border-bottom-left-radius: #{$i}px;
-  }
-  .bbr-radius-#{$i} {
-    border-bottom-right-radius: #{$i}px;
-  }
-}
-
 @for $i from 5 through 50 {
   .line-height-#{$i} {
     line-height: #{$i}px;
@@ -53,4 +32,8 @@ p {
 
 .underline {
   text-decoration: underline !important;
+}
+
+.text-overflow-ellipsis {
+  text-overflow: ellipsis;
 }
