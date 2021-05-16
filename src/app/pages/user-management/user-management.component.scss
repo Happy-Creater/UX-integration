@@ -138,6 +138,9 @@ $border-radius: 10px;
 
 .odd:hover {
   background-color: #00BA7030;
+  border-left: 2px solid #00BA70;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 .even {
@@ -146,6 +149,9 @@ $border-radius: 10px;
 
 .even:hover {
   background-color: #00BA7030;
+  border-left: 2px solid #00BA70;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 .search-div {
