@@ -2,7 +2,7 @@
   <div class="d-flex flex-grow-1">
     <gm-sidebar [collapsed]="sidebarCollapsed" (sidebarClosed)="sidebarCollapsed = true"></gm-sidebar>
     <div class="d-flex flex-grow-1 flex-column">
-      <gm-header [collapsed]="sidebarCollapsed" (sidebarOpened)="sidebarCollapsed = false" class="w-100"></gm-header>
+      <gm-header [collapsed]="sidebarCollapsed" (sidebarOpened)="sidebarCollapsed = false" class="w-100 position-sticky"></gm-header>
       <div class="content py-20 h-100">
         <div class="container h-100">
           <router-outlet></router-outlet>

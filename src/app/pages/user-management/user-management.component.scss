@@ -1,6 +1,9 @@
 @import "../../../assets/theme";
 $border-radius: 10px;
 
+.user-panel {
+  height: 700px;
+}
 .users-table-wrapper {
   border-radius: 16px;
   border: 1px solid #C2C2C2;
@@ -46,6 +49,7 @@ $border-radius: 10px;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 33.45px;
+  margin-top: 17.45px;
   font-size: 11px;
   line-height: 13px;
   background: none;
@@ -80,56 +84,6 @@ $border-radius: 10px;
   border-radius: 0 $border-radius 0 0;
   -moz-border-radius: 0 $border-radius 0 0;
   -webkit-border-radius: 0 $border-radius 0 0;
-}
-
-.user-id {
-  width: 9%;
-  float: left;
-}
-
-.user-name {
-  width: 12%;
-  float: left;
-}
-
-.user-company {
-  width: 16%;
-  float: left;
-}
-
-.user-email {
-  width: 18%;
-  float: left;
-}
-
-.user-type {
-  width: 8%;
-  float: left;
-}
-
-.user-state {
-  width: 10%;
-  float: left;
-}
-
-.user-phone {
-  width: 10%;
-  float: left;
-}
-
-.user-status {
-  width: 7%;
-  float: left;
-}
-
-.user-date {
-  width: 8%;
-  float: left;
-}
-
-.user-action {
-  width: 2%;
-  float: left;
 }
 
 .odd {

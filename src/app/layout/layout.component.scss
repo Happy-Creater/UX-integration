@@ -11,3 +11,7 @@
 .main-layout {
   @include flex(height, 100vh);
 }
+
+gm-header {
+  top: 0;
+}

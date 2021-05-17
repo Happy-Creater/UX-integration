@@ -26,7 +26,7 @@
 @mixin pretty-scroll() {
   overflow-y: auto;
   &::-webkit-scrollbar {
-    width: 15px;
+    width: 12px;
     border-radius: 9px;
     border: 1px solid #bbb;
     padding-left: 3px;
