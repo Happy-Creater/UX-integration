@@ -17,3 +17,17 @@ nav {
   overflow-y: auto;
   height: calc(100% - 65px);
 }
+
+.dropdown-toggle::after {
+  display:none;
+}
+
+.drop-arrow {
+  border-bottom: 7px solid #373737;
+  margin-top: 2px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  height: 0;
+  margin: 0 auto;
+  width: 0;
+}

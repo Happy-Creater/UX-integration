@@ -7,6 +7,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { UserManagementModule } from '../pages/user-management/user-management.module';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,10 +19,12 @@ import { UserManagementModule } from '../pages/user-management/user-management.m
   imports: [
     CommonModule,
     RouterModule,
-    UserManagementModule
+    UserManagementModule,
+    NgbDropdownModule
   ],
   exports: [
     LayoutComponent
   ]
 })
-export class LayoutModule { }
+export class LayoutModule {
+}
